@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$ISLE - Buy Your Own Island 🏝️</title>
+    <link rel="icon" type="image/png" href="Isle_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Isle_Logo.png" alt="ISLE Logo" class="logo-img">
+                <span class="logo-text">$ISLE</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#how-to-buy" class="nav-link">How to Buy</a>
+                <a href="#vibe" class="nav-link">The Vibe</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="lottie-background" id="lottie-bg"></div>
+        <img src="Palm Tree.png" alt="Palm Tree" class="palm-tree palm-left">
+        <img src="Palm Tree.png" alt="Palm Tree" class="palm-tree palm-right">
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">BUY YOUR OWN</span>
+                <span class="title-line island-text">ISLAND</span>
+            </h1>
+            <p class="hero-subtitle">🏝️ The Ultimate Paradise Coin 🏝️</p>
+            <p class="hero-description">
+                Join the $ISLE community and turn your crypto dreams into your own tropical paradise!
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.open('https://pump.fun', '_blank')">
+                    Buy $ISLE on Pump.fun
+                </button>
+                <button class="btn btn-secondary" onclick="window.open('https://discord.gg/jY9tF46Ade', '_blank')">
+                    Join Discord
+                </button>
+            </div>
+            <div class="contract-address">
+                <p class="contract-label">Contract Address:</p>
+                <div class="contract-box">
+                    <code id="contract">0x0000...COMING SOON</code>
+                    <button class="copy-btn" onclick="copyContract()">📋</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-elements">
+            <div class="float-emoji">🥥</div>
+            <div class="float-emoji">🌴</div>
+            <div class="float-emoji">🦜</div>
+            <div class="float-emoji">🌺</div>
+            <div class="float-emoji">🏖️</div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Welcome to Paradise! 🌴</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🏝️</div>
+                    <h3>Your Island Awaits</h3>
+                    <p>$ISLE isn't just a meme coin - it's your ticket to paradise. Every holder is one step closer to their own private island!</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>To The Moon & Beyond</h3>
+                    <p>We're not just going to the moon, we're buying an island there! Join the most ambitious community in crypto.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💎</div>
+                    <h3>Diamond Hands Paradise</h3>
+                    <p>Hold $ISLE and become part of an exclusive club of future island owners. The beach life is calling!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="how-to-buy" class="how-to-buy">
+        <div class="container">
+            <h2 class="section-title">How to Buy Your Ticket to Paradise 🎫</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Get a Solana Wallet</h3>
+                    <p>Download Phantom or Solflare wallet</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Get Some SOL</h3>
+                    <p>Buy SOL from an exchange and send it to your wallet</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Go to Pump.fun</h3>
+                    <p>Connect your wallet to pump.fun</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Buy $ISLE</h3>
+                    <p>Find $ISLE and start your island journey!</p>
+                </div>
+            </div>
+            <div class="cta-container">
+                <button class="btn btn-primary btn-large" onclick="window.open('https://pump.fun', '_blank')">
+                    🚀 Buy $ISLE Now on Pump.fun 🚀
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="vibe" class="vibe-section">
+        <div class="container">
+            <h2 class="section-title">The Island Vibe 🌊</h2>
+            <div class="vibe-grid">
+                <div class="vibe-card">
+                    <div class="vibe-emoji">🏖️</div>
+                    <h3>Beach Life Forever</h3>
+                    <p>Why work when you can own an island? Join the movement that's all about living your best life!</p>
+                </div>
+                <div class="vibe-card">
+                    <div class="vibe-emoji">🚀</div>
+                    <h3>Moon Mission</h3>
+                    <p>First stop: the moon. Final destination: your own private island. $ISLE is the ticket!</p>
+                </div>
+                <div class="vibe-card">
+                    <div class="vibe-emoji">🌴</div>
+                    <h3>Community Paradise</h3>
+                    <p>The most chill community in crypto. We're all about good vibes and island dreams!</p>
+                </div>
+                <div class="vibe-card">
+                    <div class="vibe-emoji">💰</div>
+                    <h3>Generational Wealth</h3>
+                    <p>Turn your bags into beaches. This is your chance to escape the rat race forever!</p>
+                </div>
+                <div class="vibe-card">
+                    <div class="vibe-emoji">🦜</div>
+                    <h3>Meme Magic</h3>
+                    <p>The power of memes meets the dream of island life. This is the narrative that writes itself!</p>
+                </div>
+                <div class="vibe-card">
+                    <div class="vibe-emoji">🥥</div>
+                    <h3>Pure Degen Energy</h3>
+                    <p>For the degens who dream bigger. Why settle for gains when you can have an island?</p>
+                </div>
+            </div>
+            <div class="hype-banner">
+                <p class="hype-text">🏝️ IMAGINE TELLING YOUR FRIENDS YOU BOUGHT AN ISLAND WITH A MEME COIN 🏝️</p>
+                <button class="btn btn-banner" onclick="window.open('https://discord.gg/jY9tF46Ade', '_blank')">
+                    Join Our Island Community
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="Isle_Logo.png" alt="ISLE Logo" class="footer-logo">
+            <div class="social-links">
+                <a href="https://twitter.com/isle" target="_blank" class="social-link">X Page</a>
+                <a href="https://discord.gg/jY9tF46Ade" target="_blank" class="social-link">Discord</a>
+                <a href="#" class="social-link">Dextools</a>
+            </div>
+            <p class="footer-text">2025 $ISLE - Buy Your Own Island 🏝️</p>
+            <p class="disclaimer">$ISLE is a meme coin with no intrinsic value. Always DYOR!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
